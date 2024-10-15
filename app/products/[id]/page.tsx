@@ -43,10 +43,10 @@ async function SingleProductPage({ params }: { params: { id: string } }) {
             {currencyAmount}
           </p>
           <p className="mt-6 leading-8 text-muted-foreground">{description}</p>
-          <AddToCart productId={params.id} />
+          <AddToCart />
         </div>
       </div>
-      <ProductReviews productId={params.id} />
+      <ProductReviews />
     </section>
   );
 }
