@@ -37,7 +37,7 @@ async function SingleProductPage({ params }: { params: { id: string } }) {
               <ShareButton name={product.name} productId={params.id} />
             </div>
           </div>
-          <ProductRating productId={params.id} />
+          <ProductRating />
           <h4 className="text-xl mt-2">{company}</h4>
           <p className="mt-3 text-md bg-muted inline-block p-2 rounded">
             {currencyAmount}
