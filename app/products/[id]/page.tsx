@@ -2,7 +2,6 @@ import Image from "next/image";
 import { formatCurrency } from "@/utils/format";
 import AddToCart from "@/components/single-product/AddToCart";
 import ProductRating from "@/components/single-product/ProductRating";
-import ShareButton from "@/components/single-product/ShareButton";
 import FavouriteToggleButton from "@/components/products/FavouriteToggleButton";
 
 import ProductReviews from "@/components/reviews/ProductReviews";
@@ -33,8 +32,7 @@ async function SingleProductPage({ params }: { params: { id: string } }) {
           <div className="flex gap-x-8 items-center">
             <h1 className="capitalize text-3xl font-bold">{name} </h1>
             <div className="flex items-center gap-x-2">
-              <FavouriteToggleButton productId={params.id} />
-              <ShareButton name={product.name} productId={params.id} />
+              <FavouriteToggleButton />
             </div>
           </div>
           <ProductRating />
