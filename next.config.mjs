@@ -6,8 +6,13 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.pexels.com",
       },
+      {
+        protocol: "https",
+        hostname: "tqtgevdbocjnydwdhafw.supabase.co",
+      },
     ],
   },
+  typescript: {},
 };
 
 export default nextConfig;
