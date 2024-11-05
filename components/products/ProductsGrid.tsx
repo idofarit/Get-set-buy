@@ -37,7 +37,7 @@ function ProductsGrid({ products }: { products: Product[] }) {
             </Link>
 
             <div className="absolute top-7 right-7 z-5">
-              <FavouriteToggleButton />
+              <FavouriteToggleButton productId={productId} />
             </div>
           </article>
         );
