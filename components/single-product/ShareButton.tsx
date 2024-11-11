@@ -31,7 +31,7 @@ function ShareButton({ productId, name }: { productId: string; name: string }) {
         side="top"
         align="end"
         sideOffset={10}
-        className="flex items-center gap-x-2 justify-center w-full"
+        className="flex items-center gap-x-2 justify-center w-full dark:bg-muted-foreground"
       >
         <TwitterShareButton url={shareLink} title={name}>
           <TwitterIcon size={32} round />
