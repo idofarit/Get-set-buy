@@ -17,10 +17,10 @@ async function CartPage() {
       <SectionTitle text="Shopping Cart" />
       <div className="mt-8 grid gap-4 lg:grid-cols-12">
         <div className="lg:col-span-8">
-          <CartItemsList />
+          <CartItemsList cartItems={cartItems} />
         </div>
         <div className="lg:col-span-4">
-          <CartTotals />
+          <CartTotals cart={currentCart} />
         </div>
       </div>
     </>
