@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import logo from "@/app/assets/images/logo.svg";
+import logo from "@/app/assets/images/logo.png";
 
 function Logo() {
   return (
